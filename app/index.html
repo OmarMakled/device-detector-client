@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Device detector</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <button class="btn">Device Detector</button>
-        <div class="result">
-            <pre>
-
-            </pre>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column content">
+                    <h1 class="title">
+                        Device Detector
+                    </h1>
+                    <p>
+                        Device detector microservice
+                    </p>
+                    <button class="button is-info" id="btn-detect">Start</button>
+                </div>
+                <div class="column is-clipped" id="result">
+                </div>
+            </div>
         </div>
-    </div>
-
-    <script src="./app.js"></script>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="./app.js">
+    </script>
 </body>
 
 </html>
