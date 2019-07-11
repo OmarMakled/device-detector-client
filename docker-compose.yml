@@ -7,5 +7,5 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - ./app:/device-detector
+      - ./public:/device-detector
       - ./site.conf:/etc/nginx/conf.d/default.conf

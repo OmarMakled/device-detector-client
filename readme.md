@@ -5,7 +5,7 @@
 ```
 git clone git@github.com:OmarMakled/device-detector-client.git
 cd device-detector-client
-docker run --rm -v $(pwd):/app node npm install
+docker run --rm -v "$PWD":/app -w /app node:alpine sh -c 'yarn install && yarn run build'
 docker-compose up
 ```
 
