@@ -5,6 +5,7 @@
 ```
 git clone git@github.com:OmarMakled/device-detector-client.git
 cd device-detector-client
+docker run --rm -v $(pwd):/app node npm install
 docker-compose up
 ```
 
